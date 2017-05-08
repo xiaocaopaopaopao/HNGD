@@ -1,0 +1,27 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!-- 配置模板默认参数 -->
+    <definition name="template" template="/template.jsp">
+        <put-attribute name="title" type="string" value="湖南省地理国情数据一体化管理系统"/>
+        <put-attribute name="header" type="template" value="/header.jsp"/>
+        <put-attribute name="body" type="template" value="/blank.jsp"/>
+    </definition>
+    <definition name="storageManage" extends="template">
+        <put-attribute name="title" value="数据存储管理"></put-attribute>
+        <put-attribute name="body" value="/storageManage.jsp"></put-attribute>
+    </definition>
+    <definition name="syncManage" extends="template">
+        <put-attribute name="title" value="数据分布与同步管理"></put-attribute>
+        <put-attribute name="body" value="/syncManage.jsp"></put-attribute>
+    </definition>
+    <definition name="tranManage" extends="template">
+        <put-attribute name="title" value="数据传输管理"></put-attribute>
+        <put-attribute name="body" value="/tranManage.jsp"></put-attribute>
+    </definition>
+    <definition name="safetyManage" extends="template">
+        <put-attribute name="title" value="数据安全管理"></put-attribute>
+        <put-attribute name="body" value="/safetyManage.jsp"></put-attribute>
+    </definition>
+</tiles-definitions>

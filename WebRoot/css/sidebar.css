@@ -1,0 +1,61 @@
+.allleft_top{
+	height: 3.5%;
+	width: 100%;
+	background-color: #285c95;
+	font: bold 14px "Micosoft Yahei",Arial,Times;
+	color: white;
+}
+
+.allleft_mid {
+	height: 93%;
+	width: 100%;
+	overflow:auto;
+}
+
+.allleft_buttom{
+	height: 60%;
+	width: 100%;
+	border-top: 1px solid #285c95;
+}
+
+.arrow_down{
+	float:right;
+	margin:8px;
+	width:16px;
+	height:8px;
+	background: url(../images/arrow_down.png) no-repeat 0 0
+}
+
+.top_title{
+	float: left;
+	width: 100px;
+	margin-top: 2px;
+}
+
+.arrow_down:HOVER{
+	margin:7px;
+	cursor: pointer;
+}
+
+.paramSetting{
+	padding: 15px;
+}
+
+.paramSetting select{
+	 width: 100%;
+	 height: 25px;
+	 margin-top: 5px;
+}
+
+.paramSetting input{
+	width: 100%;
+	height:20px;
+	margin-top: 5px
+}
+
+.paramSetting input.doJob{
+	width: 95%;
+	height:35px;
+	margin-top: 20px;
+	margin-left: 7px
+}

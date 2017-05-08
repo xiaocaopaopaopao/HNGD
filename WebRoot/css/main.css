@@ -1,0 +1,37 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	user-select: none;
+}
+
+body {
+	background-color: #FFF;
+	overflow: hidden;
+	font-family: "Trebuchet MS";
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar{
+	float: left;
+	height: 100%;
+	width: 20%;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	display: inline;
+	font-size: 13px;
+}
+
+#content{
+	float: right;
+	height: 100%;
+	width: 79.9%;
+	display:inline;
+	background-color: #FFF;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	display: inline;
+	font-size: 12px;
+}

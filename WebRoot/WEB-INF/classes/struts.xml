@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+   <package name="struts2" extends="struts-default">
+     <result-types>
+         <result-type name="tiles" 
+         class="org.apache.struts2.views.tiles.TilesResult" />
+      </result-types>
+
+      <action name="*Manage" method="{1}" class="com.action.PageForwardAction">
+         <result name="storage" type="tiles">storageManage</result>
+         <result name="synch" type="tiles">syncManage</result>
+         <result name="transmission" type="tiles">tranManage</result>
+         <result name="safety" type="tiles">safetyManage</result>
+      </action>
+      <action name="readServerAction" method="readServer" class="com.action.SettingAction">
+      </action>
+      <action name="saveServerAction" method="saveServer" class="com.action.SettingAction">
+      </action>
+      <action name="readAutoSyncAction" method="readAutoSync" class="com.action.SettingAction">
+      </action>
+      <action name="saveAutoSyncAction" method="saveAutoSync" class="com.action.SettingAction">
+      </action>
+   </package>
+</struts> 
